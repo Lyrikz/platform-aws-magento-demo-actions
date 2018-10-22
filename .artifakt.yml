@@ -43,3 +43,43 @@ outputs:
     name: public URL
     description: Fully qualified URL
     category: url
+actions:
+  -
+    code: deploy
+    name: Deploy
+    description: Deploy magento code 
+    category: deploy
+    engine: shell
+    script: deploy.sh
+  -
+    code: rollback
+    name: Rollback
+    description: Rollback magento code 
+    category: deploy
+    engine: shell
+    script: rollback.sh
+inputs:
+  - 
+    code: dbname
+    name: Database name
+    description: Choose your database name
+    category: data
+    type: text
+    default: mydbname
+    required:  true
+  - 
+    code: dbsize
+    name: Database size
+    description: Choose your database size
+    category: data
+    type: text
+    default: t2.micro
+    required:  true
+  - 
+    code: server_number
+    name: Server number
+    description: Choose your server number
+    category: server
+    type: text
+    default: 1
+    required:  true
