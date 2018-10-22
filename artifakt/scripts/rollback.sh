@@ -1,0 +1,1 @@
+echo "Rollback in progress..."
