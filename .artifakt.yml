@@ -1,4 +1,5 @@
-title: Demo Magento 2 on AWS 
+title: Demo Magento 2 on AWS
+tag: 1.0.0
 type: free
 description: Demo Magento 2 on AWS using Bitnami image.
 cloud_provider: aws
@@ -58,6 +59,20 @@ actions:
     category: deploy
     engine: shell
     script: rollback.sh
+  -
+    code: flush
+    name: Flush
+    description: Flush magento cache 
+    category: cache
+    engine: shell
+    script: flush.sh
+  -
+    code: warmup
+    name: Warmup
+    description: Warmup magento cache 
+    category: cache
+    engine: shell
+    script: warmup.sh
 inputs:
   - 
     code: dbname
