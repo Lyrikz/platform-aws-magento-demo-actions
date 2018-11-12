@@ -1,6 +1,7 @@
 title: Demo Magento 2 on AWS
 tag: 1.0.2
 type: free
+api_version: 'dkfsdf'
 description: Demo Magento 2 on AWS using Bitnami image.
 cloud_provider: aws
 build_engine: terraform
