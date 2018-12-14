@@ -1,5 +1,5 @@
 title: Demo Magento 2 on AWS
-tag: 3.2.0
+tag: 3.3.0
 type: free
 artifakt_version: "0.2"
 description: Demo Magento 2 on AWS using Bitnami image.
@@ -74,6 +74,13 @@ actions:
     category: cache
     engine: shell
     script: warmup.sh
+  -
+    code: generate_error
+    name: generate_error
+    description: Generate an error 
+    category: cache
+    engine: shell
+    script: error.sh
 inputs:
   - 
     code: dbname
