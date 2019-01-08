@@ -1,7 +1,7 @@
 resource "aws_default_vpc" "default" {
   tags {
     Name = "Default VPC"
-  }
+  
 }
 
 resource "random_id" "srvname" {
