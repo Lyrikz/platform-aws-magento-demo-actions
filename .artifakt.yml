@@ -61,7 +61,7 @@ actions:
         required: true
         default: source
         validation:
-          regex: "/source/"
+          regex: /source/
       -
         code: branch
         name: The branch (if source is a repo)
@@ -107,7 +107,7 @@ inputs:
     default: mydbname
     required:  true
     validation:
-      regex: "/\w+/"
+      regex: /\w+/
   - 
     code: dbsize
     name: Database size
