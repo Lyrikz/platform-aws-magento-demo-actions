@@ -106,6 +106,8 @@ inputs:
     type: text
     default: mydbname
     required:  true
+    validations:
+      regex: /\w+/
   - 
     code: dbsize
     name: Database size
@@ -114,6 +116,8 @@ inputs:
     type: text
     default: t2.micro
     required:  true
+    validations:
+       values: ["t2.micro"]
   - 
     code: server_number
     name: Server number
