@@ -60,14 +60,14 @@ actions:
         type: text
         required: true
         default: source
-        validations:
-          regex: /source/
+        validation:
+          regex: "/source/"
       -
         code: branch
         name: The branch (if source is a repo)
         type: text
         default: master
-        validations:
+        validation:
           values: ["master"]
   -
     code: rollback
@@ -106,8 +106,8 @@ inputs:
     type: text
     default: mydbname
     required:  true
-    validations:
-      regex: /\w+/
+    validation:
+      regex: "/\w+/"
   - 
     code: dbsize
     name: Database size
@@ -116,7 +116,7 @@ inputs:
     type: text
     default: t2.micro
     required:  true
-    validations:
+    validation:
        values: ["t2.micro"]
   - 
     code: server_number
