@@ -53,6 +53,22 @@ actions:
     category: deploy
     engine: shell
     script: deploy.sh
+    params:
+      -
+        code: source
+        name: The source code
+        type: text
+        required: true
+        default: source
+        validations:
+          regex: /source/
+      -
+        code: branch
+        name: The branch (if source is a repo)
+        type: text
+        default: master
+        validations:
+          values: ["master"]
   -
     code: rollback
     name: Rollback
