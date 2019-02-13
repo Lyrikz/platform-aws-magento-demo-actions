@@ -126,3 +126,5 @@ inputs:
     type: text
     default: "1"
     required:  true
+    validation:
+      regex: /\d+/
